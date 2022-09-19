@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'inscription</title>
+</head>
+<body>
+  <h1>Formulaire d'inscription</h1>
+  <div>
+    <div>
+      <label for="firstname"><strong>Prénom:</strong></label>
+      <input type="text" id="firstname" placeholder="Ton prénom" required>
+  </div>
+      <br>
+      <div>
+      <label for="surname"><strong>Nom:</strong></label>
+      <input type="text" id="surname" placeholder="Votre nom" required>
+  </div>
+  <br>
+  <div>
+  <label for="age"><strong>Age:</strong></label>
+  <input type="number" id="age" placeholder="age" required>
+  </div>
+  <br>
+  </div>
+  <fieldset>
+    <legend>quel et votre sexe </legend>
+    <div>
+      <input type="radio" id="homme" name="drone" value="homme"
+             checked>
+      <label for="homme">Homme</label>
+    </div>
+
+    <div>
+      <input type="radio" id="femme" name="drone" value="femme">
+      <label for="femme">femme</label>
+    </div>
+
+    <div>
+      <input type="radio" id="transgenre" name="drone" value="transgenre">
+      <label for="transgenre">transgenre</label>
+    </div>
+</fieldset>
+<br>
+<div>
+  <p>Quel est votre adresse-email ?</p>
+   <label for="email"><strong>Entrer votre email:</strong></label>
+<input type="email" id="email" name="email" pattern="+@\.com"  placeholder="pierrecrotte@gmail.com" required> 
+</div>
+    <div>
+        <label for="adressepostal"><strong>Adresse postal:</strong></label>
+        <input type="text" id="adressepostal" name="adresse postal" placeholder="17 rue douchy-les-mines" required>
+    </div>
+    <br>
+    <div>
+      <label for="codepostal"><strong>Code postal:</strong></label>
+      <input type="tel" minlength="5" maxlength="5" id="codepostal" name="code postal" pattern="[0-9]{5}" placeholder="59220" required/>
+      </div>
+      <br>
+
+    
+
+      <div>
+          <label for="Ville"><strong>Ville:</strong></label>
+          <input type="text" id="Ville" placeholder="Valenciennes" required>
+      </div>
+      <div>
+        <p><strong>Métier éxercé:</strong></p>
+        <select name="langue">
+            <option value="7">Bucheron</option>
+            <option value="7">Youtuber</option>
+            <option value="7">Banquier</option>
+            <option value="7">Policier</option>
+            <option value="7">Directeur d'entreprise </option>
+            <option value="7">Animalier</option>
+            <option value="7">autre</option>
+        </select>
+      </div>
+          <p><strong>Votre nationalité:</strong></p>
+          <select name="langue" id="langue">
+          <option value="anglais">Anglais</option>
+          <option value="français" selected>Français</option>
+          <option value="espagnol">espagnol</option>
+          <option value="italien">Italien</option>
+          <option value="allemand">allemand</option>
+          <option value="japonais">Japonais</option>
+          <option value="chinois">chinois</option>
+          <option value="russie">russie</option>
+          <option value="ukraine">ukraine</option>
+          </select>
+      <br>
+      
+      <div>
+        <label for="start"> <strong>Date de naissance:</strong></label>
+      <input type="date" id="start" name="trip-start" value="2000-01-01" min="1900-12-31" max="2030-12-31" required>
+           </div>
+      <br>
+      <p><strong>Pays de naissance:</strong></p>
+      <div>
+      <label for="en">Angleterre</label>
+      <input type="radio" id="en" name="pays de naissance">
+  </div>
+  <div>
+      <label for="fr">France</label>
+      <input type="radio" id="fr" name="pays de naissance">
+  </div>
+  <div>
+      <label for="Pays">Allemagne</label>
+      <input type="radio" id="Pays" name="pays de naissance">
+  </div>
+  <div>
+      <label for="es">Espagne</label>
+      <input type="radio" id="es" name="pays de naissance">
+  </div>
+  <div>
+      <label for="russie">russie</label>
+      <input type="radio" id="russie" name="pays de naissance">
+  </div>
+  <div>
+    <label for="ukraine">ukraine</label>
+    <input type="radio" id="ukraine" name="pays de naissance">
+</div>
+<div>
+  <label for="italie">italie</label>
+  <input type="radio" id="italie" name="pays de naissance">
+</div>
+<div>
+  <label for="chine">chine</label>
+  <input type="radio" id="chine" name="pays de naissance">
+</div>
+<div>
+  <label for="autre">Autre</label>
+  <input type="radio" id="autre" name="pays de naissance">
+</div>
+<div>
+  <label for="sécu"><strong>Numéro de sécurité social:</strong></label>
+  <input type="tel" id="sécu" pattern="[1-2-7]{1}" minlength="1" maxlength="1" size="1" title="nombre comprenant soit 1, soit 2, soit 7" required>
+  <input type="tel" minlength="2" maxlength="2" size="1" required>
+  <input type="tel" minlength="2" maxlength="2" size="1" required>
+  <input type="tel" minlength="2" maxlength="2" size="1" required>
+  <input type="tel" minlength="3" maxlength="3" size="1" required>
+  <input type="tel" minlength="3" maxlength="3" size="1" required>
+  <input type="tel" minlength="2" maxlength="2" size="1" required>
+</div>
+<div>
+  <label for="passeport"><strong>Numéro de passeport:</strong></label>
+  <input type="tel" name="nombre" id="passeport" minlength="2" maxlength="2" pattern="[0-9]{2}" size="1" title="2 premiers chiffres du passeport">
+  <input type="text" name="texte" minlength="5" maxlength="5" pattern="[a-z]{5}" size="5" title="5 première lettres du passeport">
+  <input type="tel" name="nombre" minlength="2" maxlength="2" pattern="[0-9]{2}" size="1" title="2 derniers chiffres du passeport">
+  </div>
+  <div>
+    <label for="datepasseport"><strong>Date de délivrance du passeport:</strong></label>
+    <input type="date" id="datepasseport" name="délivrance" value="1970-01-01" min="1925-01-01" max="2030-01-01">
+</div>
+<div>
+  <label for="validité"><strong>Date de validité du passeport:</strong></label>
+  <input type="date" id="validité" name="date passeport" value="2025-01-01" min="1950-01-01" max="2050-01-01">
+</div>
+<div>
+  <input type="submit">
+  </div>
+      
+</body>
+</html>
